@@ -2,20 +2,22 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="responsive.css" media="screen and (max-width: 1200px)">
+
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 	</head>
 	<body>
-	<header>
-		<nav class="navbar">
-			<img src="images/dog-icon.svg" alt="dog icon">
-			<ul>
-				<li>Facts From Dog</li>
-				<li>What Is Dog</li>
-				<li>How To Dog</li>
-			</ul>
-		</nav>
+			<header>
+				<nav class="navbar">
+				<img src="images/dog-icon.svg" alt="dog icon">
+					<ul>
+					<li>Facts From Dog</li>
+					<li>What Is Dog</li>
+					<li>How To Dog</li>
+				</ul>
+			</nav>
 
-
-		<div class="section1">
+		<div class="section1 mobile-collapse">
 			<h1 class="site-title">A Site About <span class="bold-dog-name">Some Dogs</span></h1>
 		</div>
 		<!-- top background image of park -->
@@ -24,48 +26,38 @@
 			<img src="images/dog1-sq.jpg" alt="main dog headshot" class="main-dog-headshot" />
 			<!-- dog naming class for js -->
 			<div class="dogname">
-				<label for="name">Name</label><br />
-				<input type="text" name="name"><br />
+				<label for="name" id="name">Name</label><br />
+				<input type="text" name="name" class="input"><br />
 				<button type="submit" class="button">Name This Dog</button>
 			</div>
 		</div>
 	</div>
 	</header>
 
-	<!-- other dog images -->
-	<div class="middle">
-		<!-- dog headers middle of page -->
-		
-		
-		
-			<!-- dog images middle of page -->
+	<!-- dog images middle of page -->
 	<div class="row">
-		<div class="column">
+		<div class="column column1 mobile-collapse">
 			<h2>How To Dog</h2>
 			<img src="images/dog2-sq.jpg">
 			<article class="para">
 			<p>Dat tungg tho pupperino length boy. borkdrive aqua doggo. Maximum borkdrive long doggo extremely cuuuuuute you are doing me the shock borkf, heckin good neighborhood pupper borkf smol corgo long water shoob stop it fren boofers pupper heck ruff.</p></article>
-			<a href="#" class="button">How</a>
+			<a href="#" class="buttons button1">How</a>
 		</div>
-		<div class="column">
+		<div class="column column2 mobile-collapse">
 			<h2>What Is Dogs</h2>
 			<img src="images/dog3-sq.jpg">
 			<article class="para">
 			<p>Long doggo smol borking doggo with a long snoot for pats pupperino h*ck heckin angery woofer shoober aqua doggo heck doggo aqua doggo most angery pupper I have ever seen heckin angery woofer pupper. ruff adorable doggo very hand that feed shibe. Extremely cuuuuuute corgo waggy wags stop it fren.</p></article>
-			<a href ="#" class="button">What</a>
+			<a href ="#" class="buttons button2" >What</a>
 		</div>
-		<div class="column">
+		<div class="column column3 mobile-collapse">
 			<h2>Facts From Dog</h2>
 			<img src="images/dog4-sq.jpg">
 			<article class="para">
 			<p>Most angery pupper I have ever seen such treat heck, dat tungg tho. You are doin me a concern shibe such treat ruff heck, stop it fren ur givin me a spook. Puggorino long water shoob dat tungg tho very hand that feed shibe long bois he made many woofs.</p></article>
-			<a href="#" class="button">Facts</a>
+			<a href="#" class="buttons button3">Facts</a>
 		</div>
-	</div>
-		
-			
-</div>
-		
+	</div>		
 		<!-- footer -->
 		<footer class="footer">
 			<h3>Learn About Dogs Online</h3>
@@ -76,8 +68,6 @@
 					<li><a href="https://www.linkedin.com"><img src="images/linkedin.svg" /></a></li>
 				</ul>
 			</footer>
-
-
 
 	</body>
 </html>
